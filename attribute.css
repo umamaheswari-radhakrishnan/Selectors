@@ -1,0 +1,55 @@
+/*CSS [attribute] Selector*/
+a[target]
+{
+	Background-color: yellow;
+}
+/*CSS [attribute="value"] Selector*/
+a[target="attribute"]
+{
+	background-color: green;
+}
+/*CSS [attribute~="value"] Selector*/
+p[title~="welcome"]
+{
+	border: 5px solid yellow;
+}
+/*CSS [attribute|="value"] Selector(like class="top", or followed by a hyphen( - ), like class="top-text"! )*/
+[name|="satisfied"]
+{
+	background-color:green;
+}
+/*CSS [attribute^="value"] Selector*/
+[name^="satisfied"]
+{
+	background-color:green;
+}
+/*CSS [attribute$="value"] Selector*/
+[name$="weak"]
+{
+	background-color:red;
+}
+/*CSS [attribute*="value"] Selector*/
+[title*="first"]
+{
+	color:blue;
+}
+/*CSS Combinators*/
+/*Descendant Selector(space)*/
+/*Child Selector(>)*/
+/*Adjacent Sibling Selector(+)*/
+/*General Sibling Selector(~)*/
+
+/*Descendant Selector(space)( selects all <p> elements inside <div> elements: )*/
+body p{
+	text-align:center;
+}
+/*Child Selector(>)(selects all <p> elements that are children of a <div> element:)*/
+body>p{
+	font-size:30px;
+}
+/*Adjacent Sibling Selector(+) ( selects all <p> elements that are placed immediately after <div> elements)*/
+aside + p{
+	font-family:Tahoma;
+}
+/*General Sibling Selector(~) */
+
